@@ -1,0 +1,24 @@
+footer {
+  background-color: rgb(26, 26, 26);
+  .footer-container {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    p {
+      font-size: 12px;
+      font-family: "Georgia";
+      color: rgb(153, 153, 153);
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    width: 95%;
+  }
+}

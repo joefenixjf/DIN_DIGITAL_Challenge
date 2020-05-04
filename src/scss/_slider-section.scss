@@ -1,0 +1,100 @@
+section.slider-section {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: #e2e2e2 1px solid;
+}
+.slider-text {
+  position: relative;
+  width: 478px;
+  h2.slider_text_title {
+    font-size: 42px;
+    font-family: "Georgia";
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: rgb(74, 74, 74);
+    line-height: 1.2;
+    margin: 50px 0 20px;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  button {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: lighter;
+    background-color: rgb(59, 175, 190);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+  }
+  ul.controls {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    li .bullets {
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      border: 3px solid rgb(59, 175, 190);
+      background-color: rgb(59, 175, 190);
+      margin: 0 5px;
+      border-radius: 100px;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  section.slider-section {
+    width: 95%;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 576px) {
+  section.slider-section {
+    img {
+      width: 60%;
+    }
+    .slider-text {
+      h2.slider_text_title {
+        font-size: 28px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+    button {
+      font-size: 12px;
+      font-family: "Georgia";
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+    ul.controls {
+      li .bullets {
+        width: 10px;
+        height: 10px;
+        border: 2px solid rgb(59, 175, 190);
+      }
+    }
+  }
+}

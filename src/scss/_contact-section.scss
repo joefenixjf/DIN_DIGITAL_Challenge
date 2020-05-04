@@ -1,0 +1,136 @@
+.contact-section {
+  background-color: rgb(37, 37, 37);
+}
+
+.contact-list {
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 225px);
+  justify-content: space-between;
+  gap: 20px;
+
+  .contacts-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Georgia";
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+  }
+}
+
+.contact-details {
+  .contacts-lists {
+    list-style: none;
+    li {
+      p {
+        font-size: 12px;
+        font-family: "Georgia";
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+        font-weight: lighter;
+        letter-spacing: 1pt;
+        a {
+          color: rgb(59, 175, 190);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.quick-links {
+  ul {
+    list-style: none;
+    li {
+      border-bottom: 1px solid rgb(44, 44, 44);
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      a {
+        font-size: 12px;
+        font-family: "Georgia";
+        color: rgb(59, 175, 190);
+        line-height: 1.2;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.blog {
+  position: relative;
+  .blog-subtitle {
+    h4 {
+      font-size: 13px;
+      font-family: "Georgia";
+      font-weight: lighter;
+      color: rgb(153, 153, 153);
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 11px;
+      font-family: "Georgia";
+      color: rgb(153, 153, 153);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  }
+  p {
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      font-family: "Georgia";
+      color: rgb(59, 175, 190);
+      line-height: 1.2;
+    }
+  }
+}
+
+.newsletter {
+  input {
+    background-color: rgb(44, 44, 44);
+    width: 225px;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    &::placeholder {
+      font-size: 13px;
+      font-family: "Georgia";
+      color: rgb(152, 152, 152);
+      line-height: 1.583;
+    }
+  }
+  button {
+    cursor: pointer;
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+    line-height: 1.583;
+    text-transform: uppercase;
+    background-color: rgb(59, 175, 190);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-list {
+    width: 95%;
+  }
+}
